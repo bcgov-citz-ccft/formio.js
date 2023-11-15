@@ -1,6 +1,6 @@
 import NativePromise from 'native-promise-only';
 
-const url = (formio) => {
+const url = function Provider(formio) {
   const xhrRequest = (url, name, query, data, options, progressCallback, abortCallback) => {
     return new NativePromise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
